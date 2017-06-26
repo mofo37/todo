@@ -22,7 +22,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @user.image %>
+  <%= image_tag @user.image, alt: "#{@user.email}'s avatar", style: 'max-width: 200px' %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
